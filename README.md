@@ -76,8 +76,8 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 ---
 
 # Nested Finance contest details
-- $45,000 worth of ETH main award pot
-- $5,000 worth of ETH gas optimization award pot
+- $45,000 USDC main award pot
+- $5,000 USDC gas optimization award pot
 - Join [C4 Discord](https://discord.gg/code4rena) to register
 - Submit findings [using the C4 form](https://code423n4.com/2021-11-nested-finance-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
