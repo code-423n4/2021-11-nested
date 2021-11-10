@@ -37,6 +37,8 @@ Furthermore, we allow users to copy other users’ NestedNFTs. The creator of th
 
 ![diagram](https://user-images.githubusercontent.com/22816913/140886706-ee9e18f8-de84-4bcf-af20-5847b79cc508.png)
 
+![fee_diagram](https://user-images.githubusercontent.com/22816913/141099030-473533d6-2b17-48b2-9f18-cf4e310a1d6d.png)
+
 ### Core contracts
 
 | Name             | LOC | Purpose  |
@@ -47,6 +49,8 @@ Furthermore, we allow users to copy other users’ NestedNFTs. The creator of th
 | **NestedRecords**    | **233** | Tracks underlying assets of NestedNFTs. (Amount, NestedReserve). |
 | **FeeSplitter**      | **276** | Receives payments in ERC20 tokens from the factory when fees are sent. Allows each party to claim the amount they are due. |
 | **NestedBuyBacker**  | **121** | Pulls tokens from the FeeSplitter, buys back NST tokens on the market, and burns a part of it. |
+
+> Nested Finance will launch a token (NST). The contract is out of the scope of this audit.
 
 ### Operators (modularization)
 
@@ -120,7 +124,7 @@ The owner of the TimelockController is a three-party multisignature wallet.
 Our main concerns are : 
 - The modular architecture (Factory => Operator). 
 - Protection against malicious calldatas (`Order[] calldata _orders`).
-- Funds safety in `NestedReserve`.
+- Funds safety in `NestedReserve` and `FeeSplitter`.
 
 ## ⚠️ Audits _(already completed)_ ⚠️
 
@@ -178,3 +182,10 @@ Wardens! If you have any questions, please contact us!
 - **Telegram** : @adrienspt
 - **Discord** : Adrien | Nested Finance#6564
 - **Schedule a call** : [Calendly](https://calendly.com/adrien-supizet/30min)
+
+## Beta access β
+
+If you want to access the beta version of Nested Finance, contact [Adrien](#adrien-cto) or [Axxe](#axxe-smart-contract-engineer).
+It can help to better understand the protocol context.
+
+**_Note :_ The Beta is running on the v1 (puzzle) of the protocol. The version of this contest is the v2 (lego).**
