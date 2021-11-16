@@ -119,6 +119,18 @@ This ensures the community has time to review any changes made to the protocol.
 The owner of the TimelockController is a three-party multisignature wallet.
 > During the next phase of the protocol, the ownership will be transferred to a fully decentralized DAO.
 
+### Deflationary tokens
+
+The protocol is incompatible with deflationary tokens.
+In fact, you can add a deflationary token to your portfolio but it can lead to unpredictable behaviors (positive or negative).
+
+We have chosen to manage the tokens with a fixed amount (the input) after considering several solutions.
+
+**So, how can we mitigate that ?**
+
+We're going to maintain a list of all rebase tokens (source coingecko, which is well maintained) and prevent users from adding them to their portfolio on the platform, 
+as well as showing warnings about any rebase tokens that we wouldn't be able to track.
+
 ## Main concerns 🤔
 
 Our main concerns are : 
@@ -132,7 +144,7 @@ Two audits have already been completed by [Red4Sec](https://red4sec.com/) and [P
 
 ### Links
 - [Peckshield Audit Report v1.0](audits/PeckShield-Audit-Report-Nested-v1.0.pdf)
-- Red4Sec Audit Report v1.0 (**_soon_**)
+- [Red4Sec Audit Report v1.0](audits/Red4Sec_Nested_Finance_Security_Audit_Report_v3.pdf)
 
 ## Development & Testing
 
